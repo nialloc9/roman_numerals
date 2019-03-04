@@ -106,7 +106,7 @@ Below you will find a combination of assumptions made, notes, intended client ap
 
 - As the project will only have one view I will use local state and pass that down instead of using a data store such as redux. This would be overkill for something like this. I will split the logic and view into 2. A container and a view. While inheritance could be used here I will use object composition instead as react favors it.
 
-- Validation will be custom and created using
+- Validation will be custom and created to be used individually or together using a pipeline. The pipeline will call each validator in turn with the result of the previous. If the final result is a string display this message. This allows the validators to be be used in any order while keeping the code clean, neat, and reuseable.
 
 ### Intended approach Server
 

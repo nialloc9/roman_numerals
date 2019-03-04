@@ -110,8 +110,6 @@ Below you will find a combination of assumptions made, notes, intended client ap
 
 ### Intended approach Server
 
-- I will add middleware to prevent cors and other security issues.
-
 - I will add middleware to log all incoming requests.
 
 - A model will be used for validating the incoming data.
@@ -119,6 +117,8 @@ Below you will find a combination of assumptions made, notes, intended client ap
 - The transformer functions for manipulating the data will be abstracted into a utility file to keep code clean and make it easier to test.
 
 - I will use enveloping to ensure all responses from the server follow the same data structure. { timestamp, data }. This allows such things a requestId and other data to be added to the object later without effecting the core data struture returned.
+
+- I will add middleware to prevent common security issues.
 
 ### Intended API endpoits
 
